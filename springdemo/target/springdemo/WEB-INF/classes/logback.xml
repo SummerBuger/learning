@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- slf4j日志配置文件 -->
+<configuration>
+    <!-- 设置日志输出根目录 -->
+    <property name="log.dir" value="${catalina.base}/logs"/>
+    <property name="encoding" value="UTF-8"/>
+    <property name="normal-pattern"
+              value="%d{yyyy-MM-dd.HH:mm:ss} %-5level [%thread] [%X{domain}] [%X{orderNo}] %logger{10}.%M:%L  %msg%n"/>
+    <property name="plain-pattern" value="%d{yyyy-MM-dd.HH:mm:ss} %msg%n"/>
+
+    <!-- log default -->
+    <appender name="default"
+              class="ch.qos.logback.core.ConsoleAppender">
+        <prudent>false</prudent>
+        <Append>true</Append>
+        <encoder>
+            <pattern>${normal-pattern}</pattern>
+            <charset>${encoding}</charset>
+        </encoder>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="default"/>
+    </root>
+
+</configuration>
