@@ -13,6 +13,7 @@
         <module>jvmdemo</module>
         <module>guavademo</module>
         <module>springdemo</module>
+        <module>protobuf</module>
     </modules>
 
 
@@ -75,6 +76,12 @@
                 <!--<artifactId>file</artifactId>-->
             <!--</dependency>-->
 
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.9.1</version>
+            </dependency>
+
             <!--log-->
             <dependency>
                 <groupId>ch.qos.logback</groupId>
@@ -91,8 +98,12 @@
                 <artifactId>jcl-over-slf4j</artifactId>
                 <version>1.7.12</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>2.5.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
-
 </project>

@@ -1,0 +1,33 @@
+syntax="proto2"; //语法格式
+
+package com.protobuf.learn.model; //包
+
+// option:可赋值非必须赋值 java_package:java包名
+option java_package = "com.protobuf.learn.model";
+//java类名，生成com.example.tutorial.AddressBookProtos java类
+option java_outer_classname = "AddressBookProtos";
+
+// message定义所需要序列化的数据的格式。每一个Message都是一个小的信息逻辑单元，
+// 包含了一些列的name-value对。 
+message Person {
+    required string name = 1; //required必须赋值，是永久性的
+    required int32 id = 2; // Unique ID number for this person.
+    optional string email = 3;
+
+    enum PhoneType { //枚举
+        MOBILE = 0;
+        HOME = 1;
+        WORK = 2;
+    }
+
+    message PhoneNumber {
+        required string number = 1;
+        optional PhoneType type = 2 [default = HOME];
+    }
+    repeated PhoneNumber phone = 4;
+}
+
+// Our address book file is just one of these.
+message AddressBook {
+    repeated Person person = 1;
+}

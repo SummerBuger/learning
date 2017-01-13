@@ -1,6 +1,9 @@
 package com.springdemo.liam.service;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+
+import java.util.Date;
 
 /**
  * Created by liam on 2016/12/19.
@@ -8,9 +11,11 @@ import org.springframework.stereotype.Service;
 @Service
 public class SimpleService {
 
+    @Value(value = "${begin.date}")
+    private Date date;
+
     public String hello() {
         System.out.println("the hello() method of Simple Service");
-        return "hello!";
+        return date.toString();
     }
-
 }

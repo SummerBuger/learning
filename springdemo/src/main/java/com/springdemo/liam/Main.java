@@ -1,23 +1,18 @@
 package com.springdemo.liam;
 
-import com.springdemo.liam.controlleradvice.BaseControllerAdvice;
-
-import java.lang.annotation.Annotation;
+import com.springdemo.liam.service.SimpleService;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * Created by liam on 2016/12/19.
  */
 public class Main {
-    public static void main(String[] args) {
-        Class<BaseControllerAdvice> clazz = BaseControllerAdvice.class;
-        Annotation[] annotations = clazz.getAnnotations();
-        for (Annotation annotation : annotations) {
-            System.out.println(annotation);
-            Annotation[] an = annotation.getClass().getAnnotations();
-            System.out.println("========== " + an.length);
-            for (Annotation a : an) {
-                System.out.println(a);
-            }
-        }
-    }
+  public static void main(String[] args) {
+    ClassPathXmlApplicationContext applicationContext =
+        new ClassPathXmlApplicationContext("/spring/context-config.xml");
+      SimpleService simpleService = applicationContext.getBean(SimpleService.class);
+      String hello = simpleService.hello();
+      System.out.printf(hello);
+
+  }
 }
