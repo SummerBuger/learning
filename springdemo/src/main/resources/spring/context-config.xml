@@ -9,7 +9,7 @@
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
-                <value>simple.properties</value>
+                <value>classpath:/simple.properties</value>
             </list>
         </property>
     </bean>
@@ -31,5 +31,8 @@
     <context:component-scan base-package="com.springdemo.liam">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>
     </context:component-scan>
+
+
+    <!--<import resource="web-config.xml"/>-->
 
 </beans>

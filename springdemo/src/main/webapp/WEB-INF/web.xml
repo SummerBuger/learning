@@ -10,7 +10,7 @@
     <param-value>classpath:spring/context-config.xml</param-value>
   </context-param>
   <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    <listener-class>com.springdemo.liam.listener.ApplicationInitListener</listener-class>
   </listener>
   
   <servlet>
@@ -18,7 +18,15 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>/WEB-INF/web-config.xml</param-value>
+      <param-value>classpath:spring/web-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>publishContext</param-name>
+      <param-value>true</param-value>
+    </init-param>
+    <init-param>
+      <param-name>publishEvent</param-name>
+      <param-value>true</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>

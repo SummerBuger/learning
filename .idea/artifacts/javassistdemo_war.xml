@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javassistdemo:war">
+    <output-path>$PROJECT_DIR$/javassistdemo/target</output-path>
+    <root id="archive" name="fluent-validate-demo.war">
+      <element id="artifact" artifact-name="javassistdemo:war exploded" />
+    </root>
+  </artifact>
+</component>

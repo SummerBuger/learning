@@ -5,7 +5,7 @@
     <property name="log.dir" value="${catalina.base}/logs"/>
     <property name="encoding" value="UTF-8"/>
     <property name="normal-pattern"
-              value="%d{yyyy-MM-dd.HH:mm:ss} %-5level [%thread] [%X{domain}] [%X{orderNo}] %logger{10}.%M:%L  %msg%n"/>
+              value="%d{yyyy-MM-dd.HH:mm:ss} %-5level [%thread] [%X{test}] %logger{10}.%M:%L  %msg%n"/>
     <property name="plain-pattern" value="%d{yyyy-MM-dd.HH:mm:ss} %msg%n"/>
 
     <!-- log default -->

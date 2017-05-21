@@ -4,10 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/guavademo/guavademo.iml" filepath="$PROJECT_DIR$/guavademo/guavademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javassistdemo/javassistdemo.iml" filepath="$PROJECT_DIR$/javassistdemo/javassistdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvmdemo/jvmdemo.iml" filepath="$PROJECT_DIR$/jvmdemo/jvmdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learning.iml" filepath="$PROJECT_DIR$/.idea/learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multithread/multithread.iml" filepath="$PROJECT_DIR$/multithread/multithread.iml" />
       <module fileurl="file://$PROJECT_DIR$/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/protobuf/protobuf.iml" />
       <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testdemo/testdemo.iml" filepath="$PROJECT_DIR$/testdemo/testdemo.iml" />
     </modules>
   </component>
 </project>

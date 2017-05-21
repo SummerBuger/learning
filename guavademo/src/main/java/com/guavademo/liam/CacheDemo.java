@@ -1,9 +1,9 @@
 package com.guavademo.liam;
 
-import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.CacheStats;
+import com.google.common.cache.LoadingCache;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
@@ -18,7 +18,7 @@ public class CacheDemo {
 
     private static Executor executor = Executors.newCachedThreadPool();
 
-    private static Cache<String, String> stringCache = CacheBuilder.newBuilder()
+    private static LoadingCache<String, String> stringCache = CacheBuilder.newBuilder()
             .refreshAfterWrite(1, TimeUnit.SECONDS)
             .build(new CacheLoader<String, String>() {
                 @Override
@@ -27,23 +27,27 @@ public class CacheDemo {
                 }
             });
 
-    public static void main(String[] args) throws ExecutionException {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
+        System.out.println(0 | 1 | 2);
         System.out.println("testing begin ================= ");
         stringCache.put("test1", "guavademo");
-        System.out.println("test1: " + stringCache.getIfPresent("test1"));
+        stringCache.invalidate("test1");
+        TimeUnit.SECONDS.sleep(2);
+        stringCache.cleanUp();
+        System.out.println("test1: " + stringCache.get("test1"));
         CacheStats cacheStats = stringCache.stats();
         System.out.println(cacheStats);
-        try {
-            TimeUnit.SECONDS.sleep(2);
-            System.out.println("test1: " + stringCache.getIfPresent("test1"));
-//            TimeUnit.SECONDS.sleep(10);
+//        try {
+//            TimeUnit.SECONDS.sleep(2);
 //            System.out.println("test1: " + stringCache.getIfPresent("test1"));
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        cacheStats = stringCache.stats();
-        System.out.println(cacheStats);
+////            TimeUnit.SECONDS.sleep(10);
+////            System.out.println("test1: " + stringCache.getIfPresent("test1"));
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        cacheStats = stringCache.stats();
+//        System.out.println(cacheStats);
 
         System.out.println("testing end =============");
     }

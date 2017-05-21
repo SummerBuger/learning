@@ -50,6 +50,28 @@ public class ImmutableCollectionDemo {
     }
 
     public static void main(String[] args) {
-        testImmutableCollection();
+        testImmutableCollectionToArray();
+    }
+
+    private static void testImmutableCollectionToArray() {
+        ImmutableList<String> list = ImmutableList.of("a", "nb");
+        String[] arr = new String[list.size()];
+        System.out.println(arr);
+        System.out.println("==================");
+        for (String s : arr) {
+            System.out.println(s);
+        }
+        System.out.println("==================");
+        String[] toArray = list.toArray(arr);
+        System.out.println(toArray);
+        System.out.println(arr);
+        System.out.println("==================");
+        for (String s : toArray) {
+            System.out.println(s);
+        }
+        System.out.println("==================");
+        for (String s : arr) {
+            System.out.println(s);
+        }
     }
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="fluentvalidatedemo:war">
+    <output-path>$PROJECT_DIR$/fluentvalidatedemo/target</output-path>
+    <root id="archive" name="fluent-validate-demo.war">
+      <element id="artifact" artifact-name="fluentvalidatedemo:war exploded" />
+    </root>
+  </artifact>
+</component>

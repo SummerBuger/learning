@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="fluentvalidatedemo:war exploded">
+    <output-path>$PROJECT_DIR$/fluentvalidatedemo/target/fluent-validate-demo</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javassistdemo" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="fluent-validate-demo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="javassistdemo" />
+          </element>
+          <element id="library" level="project" name="Maven: com.baidu.unbiz:fluent-validator:1.0.6.7" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/javassistdemo/target/fluent-validate-demo/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="javassistdemo/web/Web" />
+    </root>
+  </artifact>
+</component>

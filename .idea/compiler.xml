@@ -17,19 +17,26 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base" />
+        <module name="fluentvalidatedemo" />
         <module name="guavademo" />
+        <module name="javassistdemo" />
         <module name="jvmdemo" />
+        <module name="multithread" />
         <module name="protobuf" />
         <module name="springdemo" />
+        <module name="testdemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="base" target="1.5" />
-      <module name="guavademo" target="1.5" />
-      <module name="jvmdemo" target="1.5" />
-      <module name="learning" target="1.5" />
-      <module name="protobuf" target="1.5" />
-      <module name="springdemo" target="1.5" />
+    <bytecodeTargetLevel target="1.7">
+      <module name="base" target="1.7" />
+      <module name="guavademo" target="1.7" />
+      <module name="javassistdemo" target="1.7" />
+      <module name="jvmdemo" target="1.7" />
+      <module name="learning" target="1.7" />
+      <module name="multithread" target="1.7" />
+      <module name="protobuf" target="1.7" />
+      <module name="springdemo" target="1.7" />
+      <module name="testdemo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
