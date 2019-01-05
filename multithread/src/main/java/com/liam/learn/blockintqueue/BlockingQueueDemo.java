@@ -15,7 +15,7 @@ public class BlockingQueueDemo {
   }
 
   public static void testTake() {
-    BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>(10);
+    BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<Integer>(10);
 
     try {
       System.out.println(System.currentTimeMillis());
@@ -28,7 +28,7 @@ public class BlockingQueueDemo {
   }
 
   public static void testPut() {
-    BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<>(10);
+    BlockingQueue<Integer> blockingQueue = new LinkedBlockingQueue<Integer>(10);
 
     while (true) {
       try {

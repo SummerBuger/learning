@@ -23,4 +23,23 @@
         <appender-ref ref="default"/>
     </root>
 
+    <appender name="logFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/test-liam.log</file>
+        <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/test-liam.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--保留历史天数-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>${normal-pattern}</pattern>
+        </encoder>
+    </appender>
+
 </configuration>

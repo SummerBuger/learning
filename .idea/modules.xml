@@ -3,14 +3,22 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disruptor-demo/disruptor-demo.iml" filepath="$PROJECT_DIR$/disruptor-demo/disruptor-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-demo/flink-demo.iml" filepath="$PROJECT_DIR$/flink-demo/flink-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/guavademo/guavademo.iml" filepath="$PROJECT_DIR$/guavademo/guavademo.iml" />
       <module fileurl="file://$PROJECT_DIR$/javassistdemo/javassistdemo.iml" filepath="$PROJECT_DIR$/javassistdemo/javassistdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/jvmdemo/jvmdemo.iml" filepath="$PROJECT_DIR$/jvmdemo/jvmdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-learn/kafka-learn.iml" filepath="$PROJECT_DIR$/kafka-learn/kafka-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/learning.iml" filepath="$PROJECT_DIR$/.idea/learning.iml" />
       <module fileurl="file://$PROJECT_DIR$/multithread/multithread.iml" filepath="$PROJECT_DIR$/multithread/multithread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty-demo/netty-demo.iml" filepath="$PROJECT_DIR$/netty-demo/netty-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/protobuf/protobuf.iml" filepath="$PROJECT_DIR$/protobuf/protobuf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/public-suffix-list-api/psl-api.iml" filepath="$PROJECT_DIR$/public-suffix-list-api/psl-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/public-suffix-list-api/public-suffix-list-api.iml" filepath="$PROJECT_DIR$/public-suffix-list-api/public-suffix-list-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quartz-demo/quartz-demo.iml" filepath="$PROJECT_DIR$/quartz-demo/quartz-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/springdemo/springdemo.iml" filepath="$PROJECT_DIR$/springdemo/springdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/testdemo/testdemo.iml" filepath="$PROJECT_DIR$/testdemo/testdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zookeeper-demo/zookeeper-demo.iml" filepath="$PROJECT_DIR$/zookeeper-demo/zookeeper-demo.iml" />
     </modules>
   </component>
 </project>

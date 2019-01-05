@@ -17,26 +17,42 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base" />
+        <module name="disruptor-demo" />
+        <module name="flink-demo" />
         <module name="fluentvalidatedemo" />
         <module name="guavademo" />
         <module name="javassistdemo" />
         <module name="jvmdemo" />
+        <module name="kafka-learn" />
         <module name="multithread" />
+        <module name="netty-demo" />
         <module name="protobuf" />
+        <module name="psl-api" />
+        <module name="pslapi" />
+        <module name="public-suffix-list-api" />
+        <module name="quartz-demo" />
         <module name="springdemo" />
         <module name="testdemo" />
+        <module name="zookeeper-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
       <module name="base" target="1.7" />
-      <module name="guavademo" target="1.7" />
+      <module name="disruptor-demo" target="1.5" />
+      <module name="flink-demo" target="1.5" />
+      <module name="guavademo" target="1.5" />
       <module name="javassistdemo" target="1.7" />
-      <module name="jvmdemo" target="1.7" />
-      <module name="learning" target="1.7" />
+      <module name="jvmdemo" target="1.5" />
+      <module name="kafka-learn" target="1.7" />
+      <module name="learning" target="1.5" />
       <module name="multithread" target="1.7" />
-      <module name="protobuf" target="1.7" />
+      <module name="netty-demo" target="1.5" />
+      <module name="protobuf" target="1.5" />
+      <module name="public-suffix-list-api" target="1.7" />
+      <module name="quartz-demo" target="1.5" />
       <module name="springdemo" target="1.7" />
-      <module name="testdemo" target="1.7" />
+      <module name="testdemo" target="1.5" />
+      <module name="zookeeper-demo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
