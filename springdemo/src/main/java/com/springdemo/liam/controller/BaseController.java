@@ -4,12 +4,12 @@
 //import com.springdemo.liam.service.MultiSubService;
 //import com.springdemo.liam.util.LoggerSupport;
 //import com.springdemo.liam.vo.BaseParam;
+//import com.springdemo.liam.vo.MapParam;
 //import com.springdemo.liam.vo.Result;
 //import java.io.File;
 //import java.io.IOException;
 //import java.io.InputStreamReader;
 //import java.io.LineNumberReader;
-//import java.lang.reflect.Field;
 //import java.util.List;
 //import javax.annotation.Resource;
 //import javax.servlet.http.HttpServletRequest;
@@ -57,6 +57,12 @@
 //      multiSubService.test();
 //      System.out.println("=====================================");
 //    }
+//  }
+//
+//
+//  @RequestMapping("/test/map/parameter")
+//  public Result<MapParam> testMapParam(MapParam mapParam) {
+//    return Result.success(true, mapParam);
 //  }
 //
 //  @RequestMapping(value = "/upload")

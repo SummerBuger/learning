@@ -23,7 +23,8 @@ public class CompletionServiceDemo {
       });
 
   public static void main(String[] args) {
-    waitForAllSubThread();
+    int i = 1_000_0000;
+    System.out.println(i);
   }
 
   public static void waitForAllSubThread() {
@@ -40,9 +41,7 @@ public class CompletionServiceDemo {
       try {
         Integer ir = completionService.take().get();
         LOGGER.info("the completion task get {}", ir);
-      } catch (InterruptedException e) {
-        e.printStackTrace();
-      } catch (ExecutionException e) {
+      } catch (InterruptedException | ExecutionException e) {
         e.printStackTrace();
       }
     }

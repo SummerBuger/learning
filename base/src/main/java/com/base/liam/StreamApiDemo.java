@@ -13,7 +13,7 @@ public class StreamApiDemo {
     System.out.println("integer list all great than 30, " + b);
     System.out.println(integerList.stream().count());
     boolean b2 = integerList.stream().anyMatch(integer -> integer > 30);
-    System.out.println("integer list any great than 30, " + b);
+    System.out.println("integer list any great than 30, " + b2);
     System.out.println(integerList.stream().count());
 
     List<Integer> list = integerList.stream().sorted().collect(Collectors.toList());

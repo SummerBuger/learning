@@ -114,6 +114,16 @@
           <element id="library" level="project" name="Maven: javax.measure:jsr-275:0.9.3" />
           <element id="library" level="project" name="Maven: edu.usc.ir:sentiment-analysis-parser:0.1" />
           <element id="library" level="project" name="Maven: joda-time:joda-time:2.9.1" />
+          <element id="library" level="project" name="Maven: org.jdbi:jdbi3-core:3.6.0" />
+          <element id="library" level="project" name="Maven: org.antlr:antlr-runtime:3.4" />
+          <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
+          <element id="library" level="project" name="Maven: net.jodah:expiringmap:0.5.6" />
+          <element id="library" level="project" name="Maven: org.jdbi:jdbi3-sqlobject:3.6.0" />
+          <element id="library" level="project" name="Maven: org.jdbi:jdbi3-spring4:3.6.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.2.4.RELEASE" />
+          <element id="library" level="project" name="Maven: org.jdbi:jdbi3-stringtemplate4:3.6.0" />
+          <element id="library" level="project" name="Maven: org.antlr:stringtemplate:4.0.2" />
         </element>
       </element>
       <element id="directory" name="META-INF">

@@ -34,7 +34,6 @@
     <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
     <context:exclude-filter type="assignable" expression="com.springdemo.liam.component.ProtoComponent"/>
-    <context:exclude-filter type="assignable" expression="com.springdemo.liam.service.MultiSubService"/>
   </context:component-scan>
 
 

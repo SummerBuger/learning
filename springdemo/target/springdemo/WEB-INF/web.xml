@@ -7,7 +7,7 @@
   
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:spring/scheduled-test-config.xml</param-value>
+    <param-value>classpath:spring/context-config.xml</param-value>
   </context-param>
   <listener>
     <listener-class>com.springdemo.liam.listener.ApplicationInitListener</listener-class>

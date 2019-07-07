@@ -36,16 +36,16 @@
         <module name="zookeeper-demo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.7">
+    <bytecodeTargetLevel target="1.8">
       <module name="base" target="1.7" />
       <module name="disruptor-demo" target="1.5" />
       <module name="flink-demo" target="1.5" />
       <module name="guavademo" target="1.5" />
-      <module name="javassistdemo" target="1.7" />
+      <module name="javassistdemo" target="1.8" />
       <module name="jvmdemo" target="1.5" />
       <module name="kafka-learn" target="1.7" />
       <module name="learning" target="1.5" />
-      <module name="multithread" target="1.7" />
+      <module name="multithread" target="1.8" />
       <module name="netty-demo" target="1.5" />
       <module name="protobuf" target="1.5" />
       <module name="public-suffix-list-api" target="1.7" />
