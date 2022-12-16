@@ -28,7 +28,7 @@
 
 
   <properties>
-    <spring.version>4.3.5.RELEASE</spring.version>
+    <spring.version>5.2.20.RELEASE</spring.version>
     <jdbi.version>3.6.0</jdbi.version>
   </properties>
   <dependencyManagement>
